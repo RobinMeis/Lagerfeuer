@@ -29,13 +29,14 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:schaltplan-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "21 dec 2015"
+Date "23 dec 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -105,7 +106,7 @@ GND
 Wire Wire Line
 	1700 3850 2150 3850
 Wire Wire Line
-	1950 3850 1950 3900
+	1950 3650 1950 3900
 Connection ~ 1950 3850
 Wire Wire Line
 	1700 4350 2150 4350
@@ -135,4 +136,28 @@ Wire Wire Line
 	4850 4350 6450 4350
 Wire Wire Line
 	6450 4350 6450 4250
+$Comp
+L GND #PWR?
+U 1 1 567B21F5
+P 6050 3900
+F 0 "#PWR?" H 6050 3900 30  0001 C CNN
+F 1 "GND" H 6050 3830 30  0001 C CNN
+F 2 "" H 6050 3900 60  0000 C CNN
+F 3 "" H 6050 3900 60  0000 C CNN
+	1    6050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 567B2204
+P 1950 3650
+F 0 "#PWR?" H 1950 3650 30  0001 C CNN
+F 1 "GND" H 1950 3580 30  0001 C CNN
+F 2 "" H 1950 3650 60  0000 C CNN
+F 3 "" H 1950 3650 60  0000 C CNN
+	1    1950 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 3750 6050 3900
 $EndSCHEMATC
